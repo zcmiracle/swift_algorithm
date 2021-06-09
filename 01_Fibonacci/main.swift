@@ -53,8 +53,9 @@ func fib3(_ n: Int) -> Int {
 
 //print(fib(n: 64))
 //print(fib1(64))
-
 print(fib2(64))
 print(fib3(64))
 
+
+getchar();
 
