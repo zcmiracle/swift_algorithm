@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B32EED802670BE5A00B616C1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32EED7F2670BE5A00B616C1 /* main.swift */; };
 		B32EED8F2670BFCD00B616C1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32EED8E2670BFCD00B616C1 /* main.swift */; };
+		B35D05AA2679D2EE002ABEB9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35D05A92679D2EE002ABEB9 /* main.swift */; };
+		B35D05B22679DD07002ABEB9 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35D05B12679DD07002ABEB9 /* ListNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		B35D05A52679D2EE002ABEB9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +48,9 @@
 		B32EED7F2670BE5A00B616C1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B32EED8C2670BFCD00B616C1 /* 01_Fibonacci */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01_Fibonacci; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32EED8E2670BFCD00B616C1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B35D05A72679D2EE002ABEB9 /* 02_反转链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "02_反转链表"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35D05A92679D2EE002ABEB9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B35D05B12679DD07002ABEB9 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B35D05A42679D2EE002ABEB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +83,7 @@
 			children = (
 				B32EED7E2670BE5A00B616C1 /* swift_algorithm */,
 				B32EED8D2670BFCD00B616C1 /* 01_Fibonacci */,
+				B35D05A82679D2EE002ABEB9 /* 02_反转链表 */,
 				B32EED7D2670BE5A00B616C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +93,7 @@
 			children = (
 				B32EED7C2670BE5A00B616C1 /* swift_algorithm */,
 				B32EED8C2670BFCD00B616C1 /* 01_Fibonacci */,
+				B35D05A72679D2EE002ABEB9 /* 02_反转链表 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +112,15 @@
 				B32EED8E2670BFCD00B616C1 /* main.swift */,
 			);
 			path = 01_Fibonacci;
+			sourceTree = "<group>";
+		};
+		B35D05A82679D2EE002ABEB9 /* 02_反转链表 */ = {
+			isa = PBXGroup;
+			children = (
+				B35D05A92679D2EE002ABEB9 /* main.swift */,
+				B35D05B12679DD07002ABEB9 /* ListNode.swift */,
+			);
+			path = "02_反转链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +160,23 @@
 			productReference = B32EED8C2670BFCD00B616C1 /* 01_Fibonacci */;
 			productType = "com.apple.product-type.tool";
 		};
+		B35D05A62679D2EE002ABEB9 /* 02_反转链表 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B35D05AD2679D2EE002ABEB9 /* Build configuration list for PBXNativeTarget "02_反转链表" */;
+			buildPhases = (
+				B35D05A32679D2EE002ABEB9 /* Sources */,
+				B35D05A42679D2EE002ABEB9 /* Frameworks */,
+				B35D05A52679D2EE002ABEB9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02_反转链表";
+			productName = "02_反转链表";
+			productReference = B35D05A72679D2EE002ABEB9 /* 02_反转链表 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +190,9 @@
 						CreatedOnToolsVersion = 12.3;
 					};
 					B32EED8B2670BFCD00B616C1 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					B35D05A62679D2EE002ABEB9 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -160,6 +212,7 @@
 			targets = (
 				B32EED7B2670BE5A00B616C1 /* swift_algorithm */,
 				B32EED8B2670BFCD00B616C1 /* 01_Fibonacci */,
+				B35D05A62679D2EE002ABEB9 /* 02_反转链表 */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +231,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B32EED8F2670BFCD00B616C1 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35D05A32679D2EE002ABEB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35D05AA2679D2EE002ABEB9 /* main.swift in Sources */,
+				B35D05B22679DD07002ABEB9 /* ListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +405,28 @@
 			};
 			name = Release;
 		};
+		B35D05AB2679D2EE002ABEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B35D05AC2679D2EE002ABEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -369,6 +453,15 @@
 			buildConfigurations = (
 				B32EED902670BFCD00B616C1 /* Debug */,
 				B32EED912670BFCD00B616C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B35D05AD2679D2EE002ABEB9 /* Build configuration list for PBXNativeTarget "02_反转链表" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35D05AB2679D2EE002ABEB9 /* Debug */,
+				B35D05AC2679D2EE002ABEB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
