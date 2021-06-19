@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B308C6AF267DE0CD00B9AC5A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308C6AE267DE0CD00B9AC5A /* main.swift */; };
+		B308C6B9267DE26200B9AC5A /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B308C6B8267DE26200B9AC5A /* ListNode.swift */; };
 		B32EED802670BE5A00B616C1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32EED7F2670BE5A00B616C1 /* main.swift */; };
 		B32EED8F2670BFCD00B616C1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32EED8E2670BFCD00B616C1 /* main.swift */; };
 		B35D05AA2679D2EE002ABEB9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35D05A92679D2EE002ABEB9 /* main.swift */; };
@@ -16,6 +18,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B308C6AA267DE0CD00B9AC5A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		B32EED7A2670BE5A00B616C1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,6 +66,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B308C6AC267DE0CD00B9AC5A /* 04_删除链表中的节点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "04_删除链表中的节点"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B308C6AE267DE0CD00B9AC5A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B308C6B8267DE26200B9AC5A /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListNode.swift; path = "02_反转链表/ListNode.swift"; sourceTree = SOURCE_ROOT; };
 		B32EED7C2670BE5A00B616C1 /* swift_algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift_algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32EED7F2670BE5A00B616C1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B32EED8C2670BFCD00B616C1 /* 01_Fibonacci */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 01_Fibonacci; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B308C6A9267DE0CD00B9AC5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B32EED792670BE5A00B616C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B308C6AD267DE0CD00B9AC5A /* 04_删除链表中的节点 */ = {
+			isa = PBXGroup;
+			children = (
+				B308C6AE267DE0CD00B9AC5A /* main.swift */,
+				B308C6B8267DE26200B9AC5A /* ListNode.swift */,
+			);
+			path = "04_删除链表中的节点";
+			sourceTree = "<group>";
+		};
 		B32EED732670BE5A00B616C1 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +136,7 @@
 				B32EED8D2670BFCD00B616C1 /* 01_Fibonacci */,
 				B35D05A82679D2EE002ABEB9 /* 02_反转链表 */,
 				B35D064C267A0B84002ABEB9 /* 03- 判断链表是否有环 */,
+				B308C6AD267DE0CD00B9AC5A /* 04_删除链表中的节点 */,
 				B32EED7D2670BE5A00B616C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +148,7 @@
 				B32EED8C2670BFCD00B616C1 /* 01_Fibonacci */,
 				B35D05A72679D2EE002ABEB9 /* 02_反转链表 */,
 				B35D064B267A0B84002ABEB9 /* 03- 判断链表是否有环 */,
+				B308C6AC267DE0CD00B9AC5A /* 04_删除链表中的节点 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +190,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B308C6AB267DE0CD00B9AC5A /* 04_删除链表中的节点 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B308C6B0267DE0CD00B9AC5A /* Build configuration list for PBXNativeTarget "04_删除链表中的节点" */;
+			buildPhases = (
+				B308C6A8267DE0CD00B9AC5A /* Sources */,
+				B308C6A9267DE0CD00B9AC5A /* Frameworks */,
+				B308C6AA267DE0CD00B9AC5A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "04_删除链表中的节点";
+			productName = "04_删除链表中的节点";
+			productReference = B308C6AC267DE0CD00B9AC5A /* 04_删除链表中的节点 */;
+			productType = "com.apple.product-type.tool";
+		};
 		B32EED7B2670BE5A00B616C1 /* swift_algorithm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B32EED832670BE5A00B616C1 /* Build configuration list for PBXNativeTarget "swift_algorithm" */;
@@ -235,6 +284,9 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					B308C6AB267DE0CD00B9AC5A = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					B32EED7B2670BE5A00B616C1 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -266,11 +318,21 @@
 				B32EED8B2670BFCD00B616C1 /* 01_Fibonacci */,
 				B35D05A62679D2EE002ABEB9 /* 02_反转链表 */,
 				B35D064A267A0B84002ABEB9 /* 03- 判断链表是否有环 */,
+				B308C6AB267DE0CD00B9AC5A /* 04_删除链表中的节点 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B308C6A8267DE0CD00B9AC5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B308C6AF267DE0CD00B9AC5A /* main.swift in Sources */,
+				B308C6B9267DE26200B9AC5A /* ListNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B32EED782670BE5A00B616C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +370,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B308C6B1267DE0CD00B9AC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B308C6B2267DE0CD00B9AC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		B32EED812670BE5A00B616C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -514,6 +598,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B308C6B0267DE0CD00B9AC5A /* Build configuration list for PBXNativeTarget "04_删除链表中的节点" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B308C6B1267DE0CD00B9AC5A /* Debug */,
+				B308C6B2267DE0CD00B9AC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B32EED772670BE5A00B616C1 /* Build configuration list for PBXProject "swift_algorithm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
