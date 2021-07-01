@@ -15,6 +15,9 @@
 		B35D05B22679DD07002ABEB9 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35D05B12679DD07002ABEB9 /* ListNode.swift */; };
 		B35D064E267A0B84002ABEB9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35D064D267A0B84002ABEB9 /* main.swift */; };
 		B35D0657267A0C3F002ABEB9 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35D0656267A0C3F002ABEB9 /* ListNode.swift */; };
+		B3DEFD10268D54BE008115C4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEFD0F268D54BE008115C4 /* main.swift */; };
+		B3DEFD23268D55FB008115C4 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEFD22268D55FB008115C4 /* LinkedList.swift */; };
+		B3DEFD37268D57DE008115C4 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEFD36268D57DE008115C4 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +66,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		B3DEFD0B268D54BE008115C4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +91,10 @@
 		B35D064B267A0B84002ABEB9 /* 03- 判断链表是否有环 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "03- 判断链表是否有环"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35D064D267A0B84002ABEB9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B35D0656267A0C3F002ABEB9 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListNode.swift; path = "02_反转链表/ListNode.swift"; sourceTree = SOURCE_ROOT; };
+		B3DEFD0D268D54BE008115C4 /* 05_双向链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "05_双向链表"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DEFD0F268D54BE008115C4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B3DEFD22268D55FB008115C4 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		B3DEFD36268D57DE008115C4 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +133,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B3DEFD0A268D54BE008115C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,6 +160,7 @@
 				B35D05A82679D2EE002ABEB9 /* 02_反转链表 */,
 				B35D064C267A0B84002ABEB9 /* 03- 判断链表是否有环 */,
 				B308C6AD267DE0CD00B9AC5A /* 04_删除链表中的节点 */,
+				B3DEFD0E268D54BE008115C4 /* 05_双向链表 */,
 				B32EED7D2670BE5A00B616C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,6 +173,7 @@
 				B35D05A72679D2EE002ABEB9 /* 02_反转链表 */,
 				B35D064B267A0B84002ABEB9 /* 03- 判断链表是否有环 */,
 				B308C6AC267DE0CD00B9AC5A /* 04_删除链表中的节点 */,
+				B3DEFD0D268D54BE008115C4 /* 05_双向链表 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,6 +210,16 @@
 				B35D0656267A0C3F002ABEB9 /* ListNode.swift */,
 			);
 			path = "03- 判断链表是否有环";
+			sourceTree = "<group>";
+		};
+		B3DEFD0E268D54BE008115C4 /* 05_双向链表 */ = {
+			isa = PBXGroup;
+			children = (
+				B3DEFD0F268D54BE008115C4 /* main.swift */,
+				B3DEFD36268D57DE008115C4 /* Node.swift */,
+				B3DEFD22268D55FB008115C4 /* LinkedList.swift */,
+			);
+			path = "05_双向链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +310,23 @@
 			productReference = B35D064B267A0B84002ABEB9 /* 03- 判断链表是否有环 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B3DEFD0C268D54BE008115C4 /* 05_双向链表 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3DEFD13268D54BF008115C4 /* Build configuration list for PBXNativeTarget "05_双向链表" */;
+			buildPhases = (
+				B3DEFD09268D54BE008115C4 /* Sources */,
+				B3DEFD0A268D54BE008115C4 /* Frameworks */,
+				B3DEFD0B268D54BE008115C4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "05_双向链表";
+			productName = "05_双向链表";
+			productReference = B3DEFD0D268D54BE008115C4 /* 05_双向链表 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -299,6 +351,9 @@
 					B35D064A267A0B84002ABEB9 = {
 						CreatedOnToolsVersion = 12.3;
 					};
+					B3DEFD0C268D54BE008115C4 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 				};
 			};
 			buildConfigurationList = B32EED772670BE5A00B616C1 /* Build configuration list for PBXProject "swift_algorithm" */;
@@ -319,6 +374,7 @@
 				B35D05A62679D2EE002ABEB9 /* 02_反转链表 */,
 				B35D064A267A0B84002ABEB9 /* 03- 判断链表是否有环 */,
 				B308C6AB267DE0CD00B9AC5A /* 04_删除链表中的节点 */,
+				B3DEFD0C268D54BE008115C4 /* 05_双向链表 */,
 			);
 		};
 /* End PBXProject section */
@@ -364,6 +420,16 @@
 			files = (
 				B35D064E267A0B84002ABEB9 /* main.swift in Sources */,
 				B35D0657267A0C3F002ABEB9 /* ListNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DEFD09268D54BE008115C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DEFD37268D57DE008115C4 /* Node.swift in Sources */,
+				B3DEFD10268D54BE008115C4 /* main.swift in Sources */,
+				B3DEFD23268D55FB008115C4 /* LinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +661,28 @@
 			};
 			name = Release;
 		};
+		B3DEFD11268D54BE008115C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B3DEFD12268D54BE008115C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HGF48S4DZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -648,6 +736,15 @@
 			buildConfigurations = (
 				B35D0650267A0B84002ABEB9 /* Debug */,
 				B35D0651267A0B84002ABEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3DEFD13268D54BF008115C4 /* Build configuration list for PBXNativeTarget "05_双向链表" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DEFD11268D54BE008115C4 /* Debug */,
+				B3DEFD12268D54BE008115C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

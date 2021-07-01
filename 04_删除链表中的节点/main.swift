@@ -49,3 +49,41 @@ func deleteNode(_ node: ListNode?) {
 //    }
     
 }
+
+
+
+
+/**
+ 
+ 双指针：
+ 1、定义两个指针，分别指向 当前遍历的节点 和 上一次遍历的节点
+ 2、遍历原链表，当且仅当 遍历完 整条链表 或是 找到目标节点，结束遍历
+ 3、根据当前节点 的情况，对 前驱节点的next属性 进行尾加
+ 
+ */
+func deleteNode1(_ head: ListNode?, _ val: Int) -> ListNode? {
+    
+    if head == nil {
+        return head
+    }
+    
+    if head?.val == val {
+        return head?.next
+    }
+    
+    // 上一个节点
+    var preNode = head
+    // 当前节点
+    var curNode = head?.next
+    
+    // 如果不相等就往后延，如果找到相等的，就跳出循环，处理将相等的节点干掉
+    while curNode != nil, curNode?.val != val {
+        preNode = curNode
+        curNode = curNode?.next
+    }
+    
+    preNode?.next = curNode?.next
+
+    return head
+}
+
