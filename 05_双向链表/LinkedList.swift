@@ -11,7 +11,7 @@ class LinkedList<T> {
     
     var first: Node<T>?
     var last: Node<T>?
-    
+    // MARK: - 链表长度
     var count: Int {
         guard var node = first else {
             return 0
@@ -23,13 +23,24 @@ class LinkedList<T> {
         }
         return nodeCout
     }
+ 
+    // MARK: - 获取头结点
+    func getFirst() -> Node<T>? {
+        return getNode(index: 0)
+    }
     
-    // 查找节点
+    // MARK: - 获取尾节点
+    func getLast() -> Node<T>? {
+        return getNode(index: count-1)
+    }
+    
+    // MARK: - 获取节点
     func getNode(index: Int) -> Node<T>? {
-        
+        // count >> 1   count的一半
         if index == 0 {
             return first
         }
+        
         if index > count {
             return nil
         }
@@ -42,10 +53,9 @@ class LinkedList<T> {
             }
         }
         return node
-    
     }
     
-    // add 添加节点到末尾 画图分析
+    // MARK: - add 添加节点到末尾 画图分析
     func append(value: T) {
         let newNode = Node(value: value)
         if let tailNode = last { // 有尾节点
@@ -57,7 +67,7 @@ class LinkedList<T> {
         last = newNode
     }
     
-    // 头结点插入
+    // MARK: - 插入头节点
     func insertHeadNode(value: T) {
         let newNode = Node(value: value)
         if var head = first {
@@ -67,28 +77,26 @@ class LinkedList<T> {
         }
     }
     
-    // 插入节点 任意位置
+    // MARK: - 插入节点 任意位置
     func insertNode(_ value: T, index: Int) {
-        if index < 0 {
-            return
-        }
         
+        if index < 0 || index > count {
+            fatalError("Index out of range in add LinkedList")
+        }
+      
         let newNode = Node(value: value)
-        if count == 0 {
+        if count == 0 { // 链表中没有元素 first = newNode
             first = newNode
-        } else {
-            if index == 0 {
+        } else { // 链表中至少有一个元素
+            if index == 0 { // 在0的位置插入
                 newNode.next = first
                 first?.previous = newNode
                 first = newNode
             } else {
-                if index > count {
-                    return
-                }
-                
+
                 let previousNode = getNode(index: index-1)  // 上一个节点
                 let nextNode = previousNode?.next           // 下一个节点
-                
+
                 // 上一个节点 的 next 是 newNode
                 previousNode?.next = newNode
                 // 下一个节点的previous = newNode
@@ -100,9 +108,34 @@ class LinkedList<T> {
 
             }
         }
+                
+//        if index == count { // 最后面添加元素
+//            let oldLast = last
+//            last = Node.init(value: value)
+//            last?.previous = oldLast
+//            last?.next = nil
+//
+//            if count == 0 {
+//                first = last
+//            } else {
+//                oldLast?.next = last
+//            }
+//
+//        } else {
+//            let current = getNode(index: index)
+//            let previous = current?.previous
+//            let newNode = Node.init(value: value)
+//            newNode.previous = current
+//
+//            if previous == nil { // index == 0
+//                first = newNode
+//            } else {
+//                previous?.next = newNode
+//            }
+//        }
     }
     
-    // 删除节点
+    // MARK: - 删除节点
     func removeNode(node: Node<T>) -> T? {
         guard first != nil else {
             return nil
@@ -125,7 +158,7 @@ class LinkedList<T> {
         return node.value
     }
     
-    // 删除某个位置的节点
+    // MARK: - 删除某个位置的节点
     func removeNode(atIndex index : Int) -> T? {
         if first == nil {
             return nil
@@ -151,6 +184,18 @@ class LinkedList<T> {
         return node?.value
     }
     
+    // MARK: - 删除所有节点
+    func removeAll() {
+        first = nil
+    }
+
+    // MARK: - 删除最后节点
+    func removeLastNode() -> T? {
+        if first == nil {
+            return nil
+        }
+        return removeNode(atIndex: count)
+    }
     
     // size 或者 count
     func linkedListSize() -> Int {
