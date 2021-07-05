@@ -33,7 +33,6 @@ class SingleCircleLinkedList<T> {
         if index < 0 || index >= size {
             return nil
         }
-        
         var node = first?.next
         for _ in 0..<index {
             node = node?.next
